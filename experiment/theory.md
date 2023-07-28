@@ -1,1 +1,4 @@
-### Link your theory in here
+It is a device used for measuring the velocity of flow at any point in a pipe. It is based on the principle that if the velocity of flow at a point becomes zero, there is increase in pressure due to the conversion of the kinetic energy into pressure energy. The pitot tube consists of a capillary tube, bend at right angle. The lower end is directed in the up stream direction. The liquid rises up in the tube due to conversion of kinetic energy into pressure energy. The velocity is determined by measuring the rise of liquid in the tube.
+
+When a pitot tube is used for measuring the velocity of flow in a pipe, the pitot tube may be inserted in the pipe. Since a pitot tube measures the stagnation pressure heat at its dipped end. The pressure head may be determined directly by conducting a differential manometer between the pitot tube and pressure taping at the pipe surface.
+
