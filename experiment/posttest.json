@@ -1,39 +1,114 @@
 {
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+    "version": 2.0,
+    "questions": [
+      {
+        "question": "Consider the following statements",
+        "answers": {
+          "a": "The distance between metacentre and centre of buoyancy.",
+          "b": "The distance between centre of buoyancy and centre of gravity.",
+          "c": "The distance between metacentre and centre of gravity",
+          "d": "None of the above"
+        },
+        
+        "correctAnswer": "c",
+        "difficulty": "beginner"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      {
+        "question": "A pitot static tube having coefficient of velocity 0.98, measures velocities of water in a pipe. The stagnation pressure recorded is 3 m and static pressure 2 m. The actual velocity in pipe is?",
+        "answers": {
+          "a": "4.341 m/s",
+          "b": "4.429 m/s",
+          "c": "zero",
+          "d": "4.431 m/s"
+        },
+       
+        "correctAnswer": "a",
+        "difficulty": "beginner"
       },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+      {
+        "question": "Bernoulli’s equation is applied to?",
+        "answers":{
+          "a": "Pitot tube",
+          "b": "Venturimeter",
+          "c": "Orifice meter",
+          "d": "All of three mentioned here"
+        },
+        "correctAnswer": "d",
+        "difficulty":"beginner"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      {
+        "question": "A pitot static tube is used to measure the velocity of water in a pipe. The stagnation pressure head is 6 m and static pressure head is 5 m. Calculate the velocity of flow assuming the coefficient of tube equal to 0.98.",
+        "answers":{
+          "a": "8.92 m/s",
+          "b": "5.09 m/s",
+          "c": "4.34 m/s",
+          "d": "12.9 m/s"
+        },
+        "correctAnswer":"c",
+        "difficulty":"beginner"
+      },{
+        "question": "A pitot static tube is used to measure the velocity of water in a pipe. The stagnation pressure head is 6 m and static pressure head is 5 m. Calculate the velocity of flow assuming the coefficient of tube equal to 0.98.",
+        "answers":{
+          "a":"8.92 m/s",
+          "b":"5.09 m/s",
+          "c": "4.34 m/s",
+          "d": "12.9 m/s"
+        },
+        "correctAnswer":"c",
+        "difficulty":"beginner"
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+      {
+        "question":"In a pitot tube, the kinetic energy is converted into _________",
+        "answers":{
+          "a": "potential energy",
+          "b": "total energy",
+          "c": "pressure energy",
+          "d":"internal energy"
+        },
+        "correctAnswer":"c",
+        "difficulty":"beginner"
+      },
+      {
+        "question":"The lower end of the pitot tube is bet at an angle of ___________?",
+        "answers":{
+          "a": "120 degrees",
+          "b": "360 degrees",
+          "c":"90 degrees",
+          "d":"45 degrees"
+        },
+        "correctAnswer":"c",
+        "difficulty":"beginner"
+      },
+      {
+        "question": "The errors generated in the pitot tube due to the location are called __________",
+        "answers":{
+          "a":"position errors",
+          "b": "normal errors",
+          "c":"negligible errors",
+          "d": "positive errors"
+        },
+        "correctAnswer":"a",
+        "difficulty":"beginner"
+      },
+      {
+        "question":"When an aircraft is grounded, the pitot static tube is generally covered.",
+        "answers":{
+          "a":"True",
+          "b":"False"
+        },
+        "correctAnswer":"a",
+        "difficulty":"beginner"
+        
+      },{
+        "question":"The pressure measured relative to vacuum is ______",
+        "answers":{
+          "a":"total pressure",
+          "b":"static pressure",
+          "c": "dynamic pressure",
+          "d": "absolute pressure"
+        },
+        "correctAnswer":"d",
+        "difficulty":"beginner"
+      }
+    ]
+  }
