@@ -1,24 +1,24 @@
 ## Introduction
 
 
-<b>Discipline | <b>Fill your discipline name here
+<b>Discipline | <b>Chemical Engineering
 :--|:--|
-<b> Lab | <b> Fill your lab name here
-<b> Experiment|     <b> Fill your experiment name and number here
+<b> Lab | <b> Chemical Engineering Fluid Mechanics Lab
+<b> Experiment|     <b> Determination of Cc, Cv, Cd of Orifices
 
 ### About the Experiment 
 
 Fill a brief description of this experiment here
 
-<b>Name of Developer | <b> Fill the name of experiment owner here 
+<b>Name of Developer | <b> Dr. Neha Sharma
 :--|:--|
-<b> Institute | <b>  
-<b> Email id|     <b>  
-<b> Department |  
+<b> Institute | <b>  Meerut Institute of Engineering and Technology, Meerut
+<b> Email id|     <b> nsharma.iitr@gmail.com
+<b> Department |  Chemical Engineering
 
 ### Contributors List
 
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
-1 | . | . | . | . | .
-2 | . | . | . | . | .
+1 |Veer Pratap Singh| Student | CSE(AI/ML) | Meerut Institute of Engineering and Technology, Meerut | veer.singh.cseaiml.2020@miet.ac.in
+
