@@ -1,13 +1,13 @@
 
 const photo1 = document.getElementById("photo");
-const video = document.getElementById("video");
-const showVideoButton = document.getElementById("showVideoButton");
+const video1 = document.getElementById("video");
+const showVideoButton1 = document.getElementById("showVideoButton");
 
-showVideoButton.addEventListener("click", function () {
+showVideoButton1.addEventListener("click", function () {
     // Hide the photo
     photo1.style.display = "none";
     // Show the video
-    video.style.display = "block";
+    video1.style.display = "block";
     // Start playing the video
-    video.play();
+    video1.play();
 });
