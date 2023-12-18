@@ -19,7 +19,7 @@
       <div id="struct">
         <img src="./images/lab_5.png" alt="" class="baseimg" id="photo">
         
-        <video id="video" controls autoplay style="display: none;">
+        <video id="video" autoplay style="display: none;">
           <source src="./images/lab5.mp4" type="video/mp4">
           Your browser does not support the video tag.
       </video>
@@ -38,7 +38,7 @@
     <div id="table">
    
       <h2>Data Sheet</h2>
-      <h3 style="margin-left:10%;">Area of measuring tank A = 0.077 m<sup>2</sup></h3>
+      <h3 style="margin-left:10%;">Area of measuring tank A = 0.12 m<sup>2</sup></h3>
       <h3 style="margin-left:10%; ">Acceleration due to gravity (g) = 9.81 m/sec<sup>2</sup></h3>
       <h3 style="margin-left:10%; ">Diameter of nozzle, d=0.01 m</h3>
       <h3 style="margin-left:10%; ">Density of water (&rho;) = 1000 kg/m<sup>3</sup></h3>
@@ -73,17 +73,19 @@
           <th >t(sec)</th>
           <th  >F<sub>x</sub><br>(for flat plane vane)</th>
           <th  >F<sub>x</sub><br>(for hemispherical vane)</th>
-         <th  >W Kg</th>
+         
           <th  >F<sub>th</sub>&nbsp;g</th>
+          <th  >Error%</th>
           <!-- <th >V</th>
+            
           <th  >Error%</th>-->
         </tr>
        
   
         <tr>
           <td  id="sno">1</td>
+         
           <td  id="n"> </td>
-          
           <td  id="r1"> </td>
           <td  id="r2"> </td>
           <td  id="r"> </td>
@@ -93,6 +95,7 @@
          <td id="w"><input type="text" placeholder="Enter calculated value"></td>
           <td id="fth"><input type="text" placeholder="Enter calculated value"></td>
         <!--   <td id="v"></td>
+          
          <td  id="er"><input type="text" placeholder="Enter calculated value"> </td>
          
        -->
@@ -125,26 +128,12 @@
           <td id="wc"><input type="text" placeholder="Enter calculated value"></td>
           <td id="fthc"><input type="text" placeholder="Enter calculated value"></td>
          <!--  <td id="v"></td>
+
          <td  id="er"><input type="text" placeholder="Enter calculated value"> </td>
         
        -->
         </tr>
-        <tr>
-          <td  id="sno">4</td>
-          <td  id="nd"> </td>
-          <td  id="r1d"> </td>
-          <td  id="r2d"> </td>
-          <td  id="rd"> </td>
-          <td  id="td"> </td>
-          <td id="f1d"><input type="text" placeholder="Enter calculated value"></td>
-          <td id="f2d"><input type="text" placeholder="Enter calculated value"></td>
-         <td id="wd"><input type="text" placeholder="Enter calculated value"></td>
-          <td id="fthd"><input type="text" placeholder="Enter calculated value"></td>
-         <!--  <td id="v"></td>
-         <td  id="er"><input type="text" placeholder="Enter calculated value"> </td>
-       
-       -->
-        </tr>
+      
       </table>
   
       <br /><br />
@@ -161,7 +150,7 @@
   </div>
   <script src="js/record.js"></script>
   
-  <script src="js/valve.js"></script>
+  <script src="./js/valve.js"></script>
   <script src="js/test.js"></script>
 </body>
 
