@@ -2,7 +2,7 @@
     "version": 2.0,
     "questions": [
       {
-        "question": "The most common device used for measuring air speed is __________",
+        "question": "1. The most common device used for measuring air speed is __________",
         "answers": {
           "a": "Altimeter",
           "b": "Thermometer",
@@ -14,7 +14,7 @@
         "difficulty": "beginner"
       },
       {
-        "question": "The randomness of the molecules gives us ________ pressure",
+        "question": "2. The randomness of the molecules gives us ________ pressure",
         "answers": {
           "a": "Stagnation",
           "b": "Static",
@@ -26,7 +26,7 @@
         "difficulty": "beginner"
       },
       {
-        "question":"How does the pitot tube help in measuring the airspeed?",
+        "question":"3. How does the pitot tube help in measuring the airspeed?",
         "answers":{
           "a": "Using temperature",
           "b": "Using velocity",
@@ -37,7 +37,7 @@
         "difficulty":"beginner"
       },
       {
-        "question":"The instrument which combines both the static and total pressure is _______5",
+        "question":"4. The instrument which combines both the static and total pressure is _______5",
         "answers":{
           "a":"Dynamic probe",
           "b": "Static probe",
@@ -48,7 +48,7 @@
         "difficulty":"beginner"
       },
       {
-        "question": "The dynamic pressure can be used in all flows from incompressible to hypersonic.",
+        "question": "5. The dynamic pressure can be used in all flows from incompressible to hypersonic.",
         "answers":{
           "a":"True",
           "b":"False"
@@ -57,7 +57,7 @@
         "difficulty":"beginner"
       },
       {
-        "question":"The dynamic pressure can be given by ____________",
+        "question":"6. The dynamic pressure can be given by ____________",
         "answers":{
           "a":"difference of total and static pressure",
           "b":"sum of total and static pressure",
@@ -68,7 +68,7 @@
         "difficulty":"beginner"
       },
       {
-        "question":"The pressure difference (p0-p1) holds good only for incompressible flow.",
+        "question":"7. The pressure difference (p0-p1) holds good only for incompressible flow.",
         "answers":{
           "a":"True",
           "b":"False"
@@ -77,7 +77,7 @@
         "difficulty":"beginner"
       },
       {
-        "question":"When the local flow velocity is zero itself then _________.",
+        "question":"8. When the local flow velocity is zero itself then _________.",
         "answers":{
           "a":"total pressure is not equal to static pressure",
           "b":"total pressure is equal to static pressure",
@@ -88,7 +88,7 @@
         "difficulty":"beginner"
       },
       {
-        "question":"An aircraft is flying at cruise level with a velocity of 110m/s at an altitude of 10 km and the dynamic pressure is 5.43kN/m2. Now assume the aircraft is flying is at sea level with a speed of 65m/s and the same dynamic pressure. In the above data, the velocity 65m/s refers to __________",
+        "question":"9. An aircraft is flying at cruise level with a velocity of 110m/s at an altitude of 10 km and the dynamic pressure is 5.43kN/m2. Now assume the aircraft is flying is at sea level with a speed of 65m/s and the same dynamic pressure. In the above data, the velocity 65m/s refers to __________",
         "answers":{
           "a":"true air speed",
           "b":"equivalent airspeed",
@@ -98,7 +98,7 @@
         "correctAnswer":"b",
         "difficulty":"beginner"
         },{
-          "question":"Pitot tube with flat faces are more sensitive.",
+          "question":"10. Pitot tube with flat faces are more sensitive.",
           "answers":{
             "a":"True",
             "b":"False"
