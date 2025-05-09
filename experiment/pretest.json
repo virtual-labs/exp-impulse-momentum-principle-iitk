@@ -2,109 +2,116 @@
     "version": 2.0,
     "questions": [
       {
-        "question": "1. The most common device used for measuring air speed is __________",
+        "question": "When a cricket bat hits a cricket ball, impulse is applied on the_________",
         "answers": {
-          "a": "Altimeter",
-          "b": "Thermometer",
-          "c": "Pressure gauge",
-          "d": "Pitot tube"
+          "a": "Bat",
+          "b": "Ball",
+          "c": "Bat and Ball",
+          "d": "No impulse is applied"
         },
         
-        "correctAnswer": "d",
+        "correctAnswer": "b",
         "difficulty": "beginner"
       },
       {
-        "question": "2. The randomness of the molecules gives us ________ pressure",
+        "question": "Momentum is a ______ quantity",
         "answers": {
-          "a": "Stagnation",
-          "b": "Static",
-          "c": "Dynamic",
-          "d": "Absolute"
+          "a": "Scalar",
+          "b": "Vector",
+          "c": "Infinite",
+          "d": "Zero"
         },
        
         "correctAnswer": "b",
         "difficulty": "beginner"
       },
       {
-        "question":"3. How does the pitot tube help in measuring the airspeed?",
+        "question":"The equation for impulse is_______",
         "answers":{
-          "a": "Using temperature",
-          "b": "Using velocity",
-          "c": "Using mach number",
-          "d": "Using the pressure difference"
+          "a": "F∆t=m∆v",
+          "b": "F∆t=mu",
+          "c": "F∆t=mT",
+          "d": "F∆t=mRT"
         },
-        "correctAnswer":"d",
+        "correctAnswer":"a",
         "difficulty":"beginner"
       },
       {
-        "question":"4. The instrument which combines both the static and total pressure is _______5",
+        "question":"What is the SI unit of impulse?",
         "answers":{
-          "a":"Dynamic probe",
-          "b": "Static probe",
-          "c": "Pitot static probe",
-          "d": "Stagnation probe"
+          "a":"N/m",
+          "b": "N/m2",
+          "c": "N/s",
+          "d": "kg/m"
         },
         "correctAnswer":"c",
         "difficulty":"beginner"
       },
       {
-        "question": "5. The dynamic pressure can be used in all flows from incompressible to hypersonic.",
+        "question": "What is the SI unit of momentum?",
         "answers":{
-          "a":"True",
-          "b":"False"
+          "a":"kgm/s",
+          "b":"kgm/s2",
+          "c":"kgm/s3",
+          "d":"kg.m2"
         },
         "correctAnswer":"a",
         "difficulty":"beginner"
       },
       {
-        "question":"6. The dynamic pressure can be given by ____________",
+        "question":"Change in momentum of an object is equal to the_______",
         "answers":{
-          "a":"difference of total and static pressure",
-          "b":"sum of total and static pressure",
-          "c":"product of total and static pressure",
-          "d": "double of total and static pressure"
+          "a":"Internal Energy",
+          "b":"Entropy",
+          "c":"Impulse",
+          "d": "Enthalpy"
+        },
+        "correctAnswer":"c",
+        "difficulty":"beginner"
+      },
+      {
+        "question":"What is the unit of specific impulse?",
+        "answers":{
+          "a":"m/s",
+          "b":"m2/s",
+          "c":"m3/s",
+          "d":"m/s2"
         },
         "correctAnswer":"a",
         "difficulty":"beginner"
       },
       {
-        "question":"7. The pressure difference (p0-p1) holds good only for incompressible flow.",
+        "question":"What is the formula to find specific impulse?",
         "answers":{
-          "a":"True",
-          "b":"False"
-        },
-        "correctAnswer":"a",
-        "difficulty":"beginner"
-      },
-      {
-        "question":"8. When the local flow velocity is zero itself then _________.",
-        "answers":{
-          "a":"total pressure is not equal to static pressure",
-          "b":"total pressure is equal to static pressure",
-          "c":"0",
-          "d":"infinity"
+          "a":"Jsp=m/v",
+          "b":"Jsp= J/m",
+          "c":"Jsp=T/m",
+          "d":"Jsp=J/q"
         },
         "correctAnswer":"b",
         "difficulty":"beginner"
       },
       {
-        "question":"9. An aircraft is flying at cruise level with a velocity of 110m/s at an altitude of 10 km and the dynamic pressure is 5.43kN/m2. Now assume the aircraft is flying is at sea level with a speed of 65m/s and the same dynamic pressure. In the above data, the velocity 65m/s refers to __________",
+        "question":"Angular momentum is a _______ quantity",
         "answers":{
-          "a":"true air speed",
-          "b":"equivalent airspeed",
-          "c":"free stream velocity",
-          "d":"cruising speed"
+          "a":"Scalar",
+          "b":"Vector",
+          "c":"Infinite",
+          "d":"Finite"
         },
         "correctAnswer":"b",
         "difficulty":"beginner"
-        },{
-          "question":"10. Pitot tube with flat faces are more sensitive.",
+        },
+{
+  "question":"Angular momentum is proportional to __________",
           "answers":{
-            "a":"True",
-            "b":"False"
+            "a":"Inertia and angular speed",
+            "b":"Mass and angular speed",
+            "c":"Angular speed and volume",
+            "d":"Rate of change of angular speed"
             
           },
-          "correctAnswer":"b",
+          "correctAnswer":"a",
           "difficulty":"beginner"
         }
     
