@@ -101,8 +101,9 @@
         },
         "correctAnswer":"b",
         "difficulty":"beginner"
-        },{
-          "question":"Angular momentum is proportional to __________",
+        },
+{
+  "question":"Angular momentum is proportional to __________",
           "answers":{
             "a":"Inertia and angular speed",
             "b":"Mass and angular speed",
