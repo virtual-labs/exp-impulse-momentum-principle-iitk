@@ -1,4 +1,3 @@
-### Procedure
 1.	Close all the valves.
 2.	Fill sump tank ¾ with clean water and ensure that no foreign particles are there. 
 3.	Open by-pass valve.
