@@ -2,112 +2,114 @@
     "version": 2.0,
     "questions": [
       {
-        "question": "Consider the following statements",
+        "question": "The Kinetic energy of an object of mass 1 Kg is 72 J. The momentum of the object is:",
         "answers": {
-          "a": "The distance between metacentre and centre of buoyancy.",
-          "b": "The distance between centre of buoyancy and centre of gravity.",
-          "c": "The distance between metacentre and centre of gravity",
-          "d": "None of the above"
+          "a": "6 Kg m/s",
+          "b": "12 Kg m/s",
+          "c": "9 Kg m/s",
+          "d": "24 Kg m/s"
         },
         
-        "correctAnswer": "c",
+        "correctAnswer": "b",
         "difficulty": "beginner"
       },
       {
-        "question": "A pitot static tube having coefficient of velocity 0.98, measures velocities of water in a pipe. The stagnation pressure recorded is 3 m and static pressure 2 m. The actual velocity in pipe is?",
+        "question": "Impulse is defined as the change in:",
         "answers": {
-          "a": "4.341 m/s",
-          "b": "4.429 m/s",
-          "c": "zero",
-          "d": "4.431 m/s"
+          "a": "Kinetic energy",
+          "b": "Linear momentum",
+          "c": "Linear velocity",
+          "d": "Acceleration"
         },
        
-        "correctAnswer": "a",
+        "correctAnswer": "b",
         "difficulty": "beginner"
       },
       {
-        "question": "Bernoulli’s equation is applied to?",
+        "question": "What is the momentum of an object having mass of 14 Kg and velocity 28 m/s?",
         "answers":{
-          "a": "Pitot tube",
-          "b": "Venturimeter",
-          "c": "Orifice meter",
-          "d": "All of three mentioned here"
+          "a": "1/392 kg-m/s",
+          "b": "2 Kg-m/s",
+          "c": "0.5 Kg-m/s",
+          "d": "392 Kg-m/s"
         },
         "correctAnswer": "d",
         "difficulty":"beginner"
       },
       {
-        "question": "A pitot static tube is used to measure the velocity of water in a pipe. The stagnation pressure head is 6 m and static pressure head is 5 m. Calculate the velocity of flow assuming the coefficient of tube equal to 0.98.",
+        "question": "Two balls at the same temperature collide. What is conserved?",
         "answers":{
-          "a": "8.92 m/s",
-          "b": "5.09 m/s",
-          "c": "4.34 m/s",
-          "d": "12.9 m/s"
+          "a": "Momentum",
+          "b": "Velocity",
+          "c": "Temperature",
+          "d": "Kinetic Energy"
         },
-        "correctAnswer":"c",
+        "correctAnswer":"a",
         "difficulty":"beginner"
       },{
-        "question": "A pitot static tube is used to measure the velocity of water in a pipe. The stagnation pressure head is 6 m and static pressure head is 5 m. Calculate the velocity of flow assuming the coefficient of tube equal to 0.98.",
+        "question": "If the linear momentum of a moving object gets doubled due to application of a force, then its kinetic energy will",
         "answers":{
-          "a":"8.92 m/s",
-          "b":"5.09 m/s",
-          "c": "4.34 m/s",
-          "d": "12.9 m/s"
+          "a":"remain same",
+          "b":"to increase by four times",
+          "c": "to increase by two times",
+          "d": "to increase by eight times"
         },
-        "correctAnswer":"c",
+        "correctAnswer":"b",
         "difficulty":"beginner"
       },
       {
-        "question":"In a pitot tube, the kinetic energy is converted into _________",
+        "question":"which of the energy is possessed by a horse running on a level road?",
         "answers":{
-          "a": "potential energy",
-          "b": "total energy",
+          "a": "Potential energy",
+          "b": "Kinetic energy",
           "c": "pressure energy",
-          "d":"internal energy"
+          "d":"heat energy"
         },
-        "correctAnswer":"c",
+        "correctAnswer":"b",
         "difficulty":"beginner"
       },
       {
-        "question":"The lower end of the pitot tube is bet at an angle of ___________?",
+        "question":"When the speed of a moving body is doubled?",
         "answers":{
-          "a": "120 degrees",
-          "b": "360 degrees",
-          "c":"90 degrees",
-          "d":"45 degrees"
+          "a": "its acceleration is doubled",
+          "b": "its momentum is doubled",
+          "c":"its kinetic energy is doubled",
+          "d":"its potential energy is doubled"
         },
-        "correctAnswer":"c",
+        "correctAnswer":"b",
         "difficulty":"beginner"
       },
       {
-        "question": "The errors generated in the pitot tube due to the location are called __________",
+        "question": "What would be the momentum of the bullet and the gun before firing?",
         "answers":{
-          "a":"position errors",
-          "b": "normal errors",
-          "c":"negligible errors",
-          "d": "positive errors"
+          "a":"the momentum of the bullet and the gun before firing would be zero",
+          "b": "the momentum of the bullet would be more than that of the gun",
+          "c":"the momentum of the gun would be more than that of the bullet",
+          "d": "both would have certain velocity and so have the same momentum"
         },
         "correctAnswer":"a",
         "difficulty":"beginner"
       },
       {
-        "question":"When an aircraft is grounded, the pitot static tube is generally covered.",
+        "question":"If the momentum of an object increases by 20%, its kinetic energy will increase by________.",
         "answers":{
-          "a":"True",
-          "b":"False"
+          "a":"66%",
+          "b":"77%",
+          "c":"44%",
+          "d":"55%"
         },
-        "correctAnswer":"a",
+        "correctAnswer":"c",
         "difficulty":"beginner"
         
       },{
-        "question":"The pressure measured relative to vacuum is ______",
+        "question":"Find the momentum of a body of mass 200g having a kinetic energy of 10J.",
         "answers":{
-          "a":"total pressure",
-          "b":"static pressure",
-          "c": "dynamic pressure",
-          "d": "absolute pressure"
+          "a":"20 kgm/s",
+          "b":"0.2 kgm/s",
+          "c": "2 kgm/s",
+          "d": "2000 kgm/s"
         },
-        "correctAnswer":"d",
+        "correctAnswer":"c",
         "difficulty":"beginner"
       }
     ]

@@ -1,1 +1,2 @@
-To determine the co-efficient of pitot tube
+### Aim of the experiment
+Verification of impulse momentum principle.
