@@ -2,115 +2,49 @@
     "version": 2.0,
     "questions": [
       {
-        "question": "The Kinetic energy of an object of mass 1 Kg is 72 J. The momentum of the object is:",
+        "question": "1. Change in momentum of an object is equal to the",
         "answers": {
-          "a": "6 Kg m/s",
-          "b": "12 Kg m/s",
-          "c": "9 Kg m/s",
-          "d": "24 Kg m/s"
+          "a": "Impulse",
+          "b": "Energy",
+          "c": "Entropy",
+          "d": "Enthalpy"
         },
         
-        "correctAnswer": "b",
+        "correctAnswer": "a",
         "difficulty": "beginner"
       },
       {
-        "question": "Impulse is defined as the change in:",
+        "question": "2. The impulse-momentum principle is a direct consequence of: ",
         "answers": {
-          "a": "Kinetic energy",
-          "b": "Linear momentum",
-          "c": "Linear velocity",
-          "d": "Acceleration"
+          "a": "Law of conservation of energy",
+          "b": "Newton’s first law",
+          "c": "Newton’s second law",
+          "d": "Newton’s third law"
         },
        
-        "correctAnswer": "b",
+        "correctAnswer": "c",
         "difficulty": "beginner"
       },
       {
-        "question": "What is the momentum of an object having mass of 14 Kg and velocity 28 m/s?",
+        "question": "3. If a jet of water with velocity 'v' strikes a stationary inclined plate, what is the force exerted by the jet on the plate in the direction of the jet? ",
         "answers":{
-          "a": "1/392 kg-m/s",
-          "b": "2 Kg-m/s",
-          "c": "0.5 Kg-m/s",
-          "d": "392 Kg-m/s"
+          "a": "ρAv²",
+          "b": "ρAv²sinθ",
+          "c": "ρAv²cosθ",
+          "d": "2ρAv²"
         },
-        "correctAnswer": "d",
+        "correctAnswer": "c",
         "difficulty":"beginner"
       },
       {
-        "question": "Two balls at the same temperature collide. What is conserved?",
+        "question": "4. The impulse-momentum principle is particularly useful in analyzing:",
         "answers":{
-          "a": "Momentum",
-          "b": "Velocity",
-          "c": "Temperature",
-          "d": "Kinetic Energy"
-        },
-        "correctAnswer":"a",
-        "difficulty":"beginner"
-      },{
-        "question": "If the linear momentum of a moving object gets doubled due to application of a force, then its kinetic energy will",
-        "answers":{
-          "a":"remain same",
-          "b":"to increase by four times",
-          "c": "to increase by two times",
-          "d": "to increase by eight times"
+          "a": "Fluid statics",
+          "b": "Fluid dynamics with negligible viscous effects",
+          "c": "Fluid dynamics with significant viscous effects",
+          "d": "Heat transfer in fluid"
         },
         "correctAnswer":"b",
-        "difficulty":"beginner"
-      },
-      {
-        "question":"which of the energy is possessed by a horse running on a level road?",
-        "answers":{
-          "a": "Potential energy",
-          "b": "Kinetic energy",
-          "c": "pressure energy",
-          "d":"heat energy"
-        },
-        "correctAnswer":"b",
-        "difficulty":"beginner"
-      },
-      {
-        "question":"When the speed of a moving body is doubled?",
-        "answers":{
-          "a": "its acceleration is doubled",
-          "b": "its momentum is doubled",
-          "c":"its kinetic energy is doubled",
-          "d":"its potential energy is doubled"
-        },
-        "correctAnswer":"b",
-        "difficulty":"beginner"
-      },
-      {
-        "question": "What would be the momentum of the bullet and the gun before firing?",
-        "answers":{
-          "a":"the momentum of the bullet and the gun before firing would be zero",
-          "b": "the momentum of the bullet would be more than that of the gun",
-          "c":"the momentum of the gun would be more than that of the bullet",
-          "d": "both would have certain velocity and so have the same momentum"
-        },
-        "correctAnswer":"a",
-        "difficulty":"beginner"
-      },
-      {
-        "question":"If the momentum of an object increases by 20%, its kinetic energy will increase by________.",
-        "answers":{
-          "a":"66%",
-          "b":"77%",
-          "c":"44%",
-          "d":"55%"
-        },
-        "correctAnswer":"c",
-        "difficulty":"beginner"
-        
-      },{
-        "question":"Find the momentum of a body of mass 200g having a kinetic energy of 10J.",
-
-        "answers":{
-          "a":"20 kgm/s",
-          "b":"0.2 kgm/s",
-          "c": "2 kgm/s",
-          "d": "2000 kgm/s"
-        },
-        "correctAnswer":"c",
         "difficulty":"beginner"
       }
     ]

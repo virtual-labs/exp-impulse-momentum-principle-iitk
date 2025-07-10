@@ -2,118 +2,62 @@
     "version": 2.0,
     "questions": [
       {
-        "question": "When a cricket bat hits a cricket ball, impulse is applied on the_________",
+        "question": "1. The impulse-momentum equation in fluid mechanics states that the impulse applied to a fluid is equal to",
         "answers": {
-          "a": "Bat",
-          "b": "Ball",
-          "c": "Bat and Ball",
-          "d": "No impulse is applied"
+          "a": "Change in kinetic energy",
+          "b": "Change in potential energy",
+          "c": "Change in momentum",
+          "d": "None of above"
         },
         
-        "correctAnswer": "b",
+        "correctAnswer": "c",
         "difficulty": "beginner"
       },
       {
-        "question": "Momentum is a ______ quantity",
+        "question": "2. If a jet of water strikes a stationary curved plate at its center, the force exerted by the jet is",
         "answers": {
-          "a": "Scalar",
-          "b": "Vector",
-          "c": "Infinite",
-          "d": "Zero"
+          "a": "In the direction of jet",
+          "b": "Depends on curvature plate",
+          "c": "zero",
+          "d": "at 90 degree "
         },
        
         "correctAnswer": "b",
         "difficulty": "beginner"
       },
       {
-        "question":"The equation for impulse is_______",
+        "question":"3. Momentum is a ______ quantity",
         "answers":{
-          "a": "F∆t=m∆v",
-          "b": "F∆t=mu",
-          "c": "F∆t=mT",
-          "d": "F∆t=mRT"
+          "a": "vector",
+          "b": "scalar",
+          "c": "infinite",
+          "d": "zero"
         },
         "correctAnswer":"a",
         "difficulty":"beginner"
       },
       {
-        "question":"What is the SI unit of impulse?",
+        "question":"4. What is the SI unit of impulse?",
         "answers":{
-          "a":"N/m",
-          "b": "N/m2",
-          "c": "N/s",
-          "d": "kg/m"
+          "a": "N/m",
+          "b": "N/s",
+          "c": "m<sub>2</sub>/N",
+          "d": "m/n"
         },
-        "correctAnswer":"c",
+        "correctAnswer":"b",
         "difficulty":"beginner"
       },
       {
-        "question": "What is the SI unit of momentum?",
+        "question":"5. What is the SI unit of momentum?",
         "answers":{
           "a":"kgm/s",
-          "b":"kgm/s2",
-          "c":"kgm/s3",
-          "d":"kg.m2"
+          "b":"kgm/s<sub>2</sub>",
+          "c":"kgm.s<sub>2</sub>",
+          "d":"kg/s"
         },
         "correctAnswer":"a",
         "difficulty":"beginner"
-      },
-      {
-        "question":"Change in momentum of an object is equal to the_______",
-        "answers":{
-          "a":"Internal Energy",
-          "b":"Entropy",
-          "c":"Impulse",
-          "d": "Enthalpy"
-        },
-        "correctAnswer":"c",
-        "difficulty":"beginner"
-      },
-      {
-        "question":"What is the unit of specific impulse?",
-        "answers":{
-          "a":"m/s",
-          "b":"m2/s",
-          "c":"m3/s",
-          "d":"m/s2"
-        },
-        "correctAnswer":"a",
-        "difficulty":"beginner"
-      },
-      {
-        "question":"What is the formula to find specific impulse?",
-        "answers":{
-          "a":"Jsp=m/v",
-          "b":"Jsp= J/m",
-          "c":"Jsp=T/m",
-          "d":"Jsp=J/q"
-        },
-        "correctAnswer":"b",
-        "difficulty":"beginner"
-      },
-      {
-        "question":"Angular momentum is a _______ quantity",
-        "answers":{
-          "a":"Scalar",
-          "b":"Vector",
-          "c":"Infinite",
-          "d":"Finite"
-        },
-        "correctAnswer":"b",
-        "difficulty":"beginner"
-        },
-{
-  "question":"Angular momentum is proportional to __________",
-          "answers":{
-            "a":"Inertia and angular speed",
-            "b":"Mass and angular speed",
-            "c":"Angular speed and volume",
-            "d":"Rate of change of angular speed"
-            
-          },
-          "correctAnswer":"a",
-          "difficulty":"beginner"
-        }
+      }
     
     ]
   }
