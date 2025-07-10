@@ -1,15 +1,14 @@
-1.	Close all the valves.
-2.	Fill sump tank ¾ with clean water and ensure that no foreign particles are there. 
-3.	Open by-pass valve.
-4.	Ensure that ON/OFF switch given on the panel is at OFF position.
-5.	Switch on the main power supply and then switch ON the pump.
-6.	Open flow control valve and allow water to flow through test section by partially closing valve.
-7.	Open the air release valve provided on the manometer, slowly to release the air from manometer.
-8.	When there is no air in the manometer, close air release valve.
-9.	Set the position of pitot tube at the centre of the test section by adjusting the pointer to zero by knob provided.
-10.	Adjust water flow rate with the help of control valve and by pass valve.
-11.	Record the manometer reading.
-12.	Measure the flow of water, discharged, using stop watch and measuring tank.
-13.	Repeat the experiment for different flow rates of water by operating control valve and by-pass valve.
-14.	Record the manometer reading for different position of pitot tube at particular discharge for determination of velocity profile. 
+<b>Requirements (Instruments, Chemicals & Other) : </b><br>
+The set up primarily consists of a nozzle through which jet emerges vertically in such a way that it may be conveniently observed through the transparent cylinder. It strikes the target plate (flow detector) or disc positioned above it. An arrangement is made for the movement of the plate under the action of the jet and also because of the weight placed on the loading pan. Water enters vertically from the top of the cylinder, through a nozzle striking a target, mounted on a stem, and leaves through the outlet holes in the base of the cylinder. A scale (level guage) is provided to carry the plate to its original position i.e. as before the jet strikes the plate. A weight pan is mounted at the top of the stem to allow the force of the striking water to be counterbalanced by applied masses A collecting tank is utilized to find the actual discharge and velocity through nozzle. <br>
+
+<img src = "images/img_2.png"> <br>
+
+<b>Procedure : </b> <br>
+1.	Note down the relevant dimensions as area of collecting tank and diameter of nozzle. <br>
+2.	When jet is not running, note down the position of upper disc or plate. <br>
+3.	Admit water supply to the nozzle. iv. As the jet strikes the disc, the disc moves upward, now place the weights to bring back the upper disc to its original position. <br>
+4.	At this position find out the discharge and note down the weights placed above the disc. <br>
+5.	The procedure is repeated for different values of flow rate by reducing the water supply in steps.
+
+
 
