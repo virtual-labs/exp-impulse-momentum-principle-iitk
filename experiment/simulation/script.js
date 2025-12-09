@@ -1,258 +1,109 @@
-
-
-// to open the screw
-const screw1 = document.getElementById("img6");
-const screw2 = document.getElementById("img7");
-
-let isScrew1Up = false;
-let isScrew2Up = false;
-
-const originalBottom1 = 67; 
-const originalBottom2 = 68; 
-
-screw1.addEventListener("click", () => {
-  if (!isScrew1Up) {
-    screw1.style.bottom = (originalBottom1 + 3) + "%";
-  } else {
-    screw1.style.bottom = originalBottom1 + "%";
-  }
-  isScrew1Up = !isScrew1Up;
-
-  checkScrews();  
-  checkScrewsDown();
-
-
-});
-
-screw2.addEventListener("click", () => {
-  if (!isScrew2Up) {
-    screw2.style.bottom = (originalBottom2 + 3) + "%";
-  } else {
-    screw2.style.bottom = originalBottom2 + "%";
-  }
-  isScrew2Up = !isScrew2Up;
-
-
-  checkScrews(); 
-  checkScrewsDown();
-
-
-
-});
-
-
-function checkScrews() {
-  if (step === 1 && isScrew1Up && isScrew2Up) {
-    step++;
-    updateInstruction(" Now click on the upper plate to move it on to the table.");
-  }
-}
-
-
-
-function checkScrewsDown() {
-  if (step === 5 && !isScrew1Up && !isScrew2Up) {
-    step++;
-    updateInstruction(" Now click on the Start button to start the experiment.");
-  }
-}
-  
-
-// upper part movement
-
-const img3 = document.getElementById("img3"); 
-const img5 = document.getElementById("img5"); 
-let isMovedTogether = false;
-
-img3.addEventListener("click", () => {
-  if (!isMovedTogether) {
-    img3.style.transform = "translate(300px, 100px)";
-    img5.style.transform = "translate(300px, 100px)";
-
-
-   
-    if (step === 2) {
-      step++;
-      updateInstruction(" Observe all the equipment and take starting reading.");
-      setTimeout(() => {
-        step++;
-        updateInstruction(" Now again click on plate to move it back to its original position.");
-      }, 4000);
-    }
-  
-
 document.querySelector('.start-btn').addEventListener('click', () => {
-  document.getElementById('screen1').classList.remove('active');
-  document.getElementById('screen2').classList.add('active');
-});
+   document.getElementById('screen1').classList.remove('active'); 
+   document.getElementById('screen2').classList.add('active'); });
 
+// --- Config ---
+const MAX_CYCLES = 10;
+let cycleIndex = 1;        // 1..MAX_CYCLES
+let firstRun = true;
+let valveOpen = false;
+let stopwatchCompleted = false;
+let stopwatchInterval = null;
+let collectBtnTimer = null;
 
-
+// --- Elements ---
 const img3 = document.querySelector('.img3');
-const img4 = document.querySelector('.img4');
 const img5 = document.querySelector('.img5');
+const img4 = document.querySelector('.img4');
 const img6 = document.querySelector('.img6');
 const img7 = document.querySelector('.img7');
-const screen3Header = document.querySelector('#screen2 .header-bar h1');
+const img8 = document.getElementById('img8');
 const fountainSound = document.getElementById('fountainSound');
 const stopwatch = document.getElementById('stopwatch');
-
-let valveOpen = false; // Track if valve is open
-let stopwatchCompleted = false; 
-let stopwatchInterval;
-
 const screen2Header = document.querySelector('#screen2 .header-bar h1');
+const collectBtn = document.getElementById('collectBtn');
 
-  } else {
-    img3.style.transform = "translate(0px, 0px)";
-    img5.style.transform = "translate(0px, 0px)";
-
-
-    
-    if (step === 4) {
-      step++;
-      updateInstruction(" Now click on the knurled nuts to fix it with plate.");
-    }
-
-
-
-
-
-  }
-  isMovedTogether = !isMovedTogether;
-});
-img5.addEventListener("click", () => img3.click());
-
-
-// fountain
-const fountainSound = document.getElementById("fountainSound");
-
-const fountain = document.getElementById("fountain");
-const startBtn = document.getElementById("startFountain");
-let isRunning = false;
-
-startBtn.addEventListener("click", () => {
-  isRunning = !isRunning;
-  fountain.classList.toggle("active", isRunning);
-  startBtn.textContent = isRunning ? "Stop" : "Start";
-  startBtn.style.backgroundColor = isRunning ? " #90EE90" : "";
-
-
-
-  
-if (step === 6 && isRunning) {
-  step++;
-  updateInstruction("Place the 50gm weight on spring of plate by clicking on to it.");
-}
-
-
-
-  if (isRunning) {
-    fountainSound.play();
-  } else {
-    fountainSound.pause();
-    fountainSound.currentTime = 0; 
-
-    
-  }
-
-  
-  
-});
-
-
-// weight movement
-const weight = document.getElementById("img4");
-
-let isWeightMoved = false;
-const originalLeft4 = 19; 
-const originalBottom4 = 16; 
-
-weight.addEventListener("click", () => {
-  if (!isWeightMoved) {
-    weight.style.left = (originalLeft4 + 21) + "%";  
-    weight.style.bottom = (originalBottom4 + 56) + "%"; 
-  } else {
-    weight.style.left = originalLeft4 + "%";
-    weight.style.bottom = originalBottom4 + "%";
-
-
-
-   
-    if (step === 8) {
-      step++;
-      updateInstruction(" Take the required reading.");
-    }
-
-
-
-  }
-  isWeightMoved = !isWeightMoved;
-
- 
-  if (step === 7 && isWeightMoved) {
-    step++;
-    updateInstruction("Wait for sometime and then Stop the experiment.");
-  }
-
-
-
-});
-
-
-
-
-
-const instruction = document.getElementById("instructionText");
-let step = 1;
-
-function updateInstruction(text) {
-  instruction.textContent = text;
-
-// checking for further experiment
-// Base header messages (other than Step 2 which changes per cycle)
+// --- Static headers for steps after the "weight" step ---
 const otherHeaders = [
   "Now click on the valve so that water comes out from the nozzle.",
   "Open valve slowly to adjust the weight pan. Observe the experiment for 30 sec.",
-  "30 seconds completed. Click the valve to stop the flow.",
+  "30 seconds completed.Click on the collect button to collect water in measuring tank.",
   "Click on the collect button to collect water in measuring tank.",
   "Calculate the area of the water collected in the tank."
 ];
 
-let currentCycle = 0; // Track which repetition we are in
-let firstRun = true;  // Step 1 runs only first time
+// --- Helpers ---
+function weightHeaderForCurrentCycle() {
+  return `Add ${50 * cycleIndex}gms weight on the weight pan.`;
+}
 
-// --- Step 1: img3 click (first run only) ---
+function resetStopwatch() {
+  clearInterval(stopwatchInterval);
+  stopwatchInterval = null;
+  // stopwatch.style.display = 'none';
+  stopwatch.textContent = '00:00';
+}
+
+// wait for transitionend of a property (with fallback timeout)
+function waitForTransitionEnd(el, propName, fallback = 3000) {
+  return new Promise(resolve => {
+    let resolved = false;
+    function onEnd(e) {
+      if (e.propertyName === propName) {
+        resolved = true;
+        el.removeEventListener('transitionend', onEnd);
+        resolve();
+      }
+    }
+    el.addEventListener('transitionend', onEnd);
+    setTimeout(() => {
+      if (!resolved) {
+        el.removeEventListener('transitionend', onEnd);
+        resolve();
+      }
+    }, fallback);
+  });
+}
+
+// ensure img7 is in initial state (height 0, opacity 0) and classes removed
+function prepareImg7InitialState() {
+  img7.classList.remove('active', 'hide');
+  // Use inline styles to force the starting point (then reflow)
+  img7.style.height = '0%';
+  img7.style.opacity = '0';
+  void img7.offsetWidth; // force reflow
+}
+
+// --- Step 1: img3 click (only first run) ---
 img3.addEventListener('click', () => {
-  if (!firstRun) return; // Prevent running in later cycles
-
+  if (!firstRun) return;
   img3.classList.remove('animate');
-  void img3.offsetWidth; 
+  void img3.offsetWidth;
   img3.classList.add('animate');
 
-  screen2Header.textContent = `Add ${50 * (currentCycle + 1)}gms weight on the weight pan.`; // 50g for first run
-  firstRun = false; // Disable for future runs
+  // show weight header for cycle 1
+  screen2Header.textContent = weightHeaderForCurrentCycle();
+  firstRun = false;
 });
 
-// --- Step 2: img5 click ---
+// --- Step 2: img5 click (shows weight header, then moves on) ---
 img5.addEventListener('click', () => {
   img3.classList.remove('upleft');
   void img5.offsetWidth;
   img5.classList.add('upleft');
 
-  img3.style.transform = 'translateY(15%)';
+  // show weight header for current cycle
+  screen2Header.textContent = weightHeaderForCurrentCycle();
 
-  // Step 2 header: weight increases by +50g each cycle
-  screen2Header.textContent = `Add ${50 * (currentCycle + 1)}gms weight on the weight pan.`;
-
-  // Immediately after showing weight header, move to next step
+  // after a short moment, instruct to open valve
   setTimeout(() => {
     screen2Header.textContent = otherHeaders[0]; // "Now click on the valve..."
-  }, 1000);
+  }, 700);
 });
 
-// --- Step 3: Valve open ---
+// --- Step 3: Valve click (open / close) ---
 img4.addEventListener('click', () => {
+  // Open valve
   if (!valveOpen) {
     valveOpen = true;
     img4.style.transform = 'rotateZ(-15deg)';
@@ -260,22 +111,25 @@ img4.addEventListener('click', () => {
     img3.style.transform = 'translateY(-0.5%)';
     fountainSound.play();
     screen2Header.textContent = otherHeaders[1]; // "Open valve slowly..."
-    // img7.classList.add('active');
-    img7.classList.remove('hide', 'active');
-    void img7.offsetWidth; // Force reflow
-    img7.classList.add('active');
 
-    // Show collect button after 30s
-    setTimeout(() => {
-      const collectBtn = document.getElementById('collectBtn');
+    // Prepare img7 to animate freshly
+    prepareImg7InitialState();
+    // small reflow then activate
+    void img7.offsetWidth;
+    img7.classList.add('active'); // this triggers the long (30s) rising animation
+
+    // show collect button after 30s
+    collectBtnTimer = setTimeout(() => {
       collectBtn.classList.remove('hidden');
       collectBtn.classList.add('show');
     }, 30000);
 
-    // Stopwatch logic
+    // Start stopwatch after 1s
     setTimeout(() => {
       let seconds = 0;
+      resetStopwatch();
       stopwatch.style.display = 'block';
+      
       stopwatchInterval = setInterval(() => {
         seconds++;
         const minutes = String(Math.floor(seconds / 60)).padStart(2, '0');
@@ -290,6 +144,8 @@ img4.addEventListener('click', () => {
       }, 1000);
     }, 1000);
 
+  // Close valve (only allowed after stopwatchCompleted)
+
   } else if (valveOpen && stopwatchCompleted) {
     img4.style.transform = 'rotateZ(0deg)';
     img6.classList.remove('active');
@@ -298,53 +154,140 @@ img4.addEventListener('click', () => {
     screen2Header.textContent = otherHeaders[3]; // "Click on the collect button..."
     valveOpen = false;
     stopwatchCompleted = false;
+    // clear any pending collect btn timer (defensive)
+    if (collectBtnTimer) {
+      clearTimeout(collectBtnTimer);
+      collectBtnTimer = null;
+    }
   }
 });
 
 // --- Step 4: Collect button click ---
-document.getElementById('collectBtn').addEventListener('click', () => {
-  img7.classList.remove('active');
-  img7.classList.add('hide');
-  img8.classList.add('up');
+// collectBtn.addEventListener('click', async () => {
+//   // hide rising water by switching to the 'hide' state (CSS transitions handle this)
+//   img7.classList.remove('active');
+//   // force reflow then add hide so transitions apply consistently
+//   void img7.offsetWidth;
+//   img7.classList.add('hide');
 
-  const collectBtn = document.getElementById('collectBtn');
+//   // hide the collect button
+//   collectBtn.classList.remove('show');
+//   collectBtn.classList.add('hidden');
+
+//   // Move background slightly as before
+//   img8.classList.add('up');
+
+//   // stop & reset stopwatch
+//   resetStopwatch();
+
+//   // Wait for the height transition to finish on img7 (height transition is 2s in CSS)
+//   await waitForTransitionEnd(img7, 'height', 3500);
+
+//   // Once hide transition finished, prepare next cycle
+//   finalizeCycle();
+// });
+
+
+
+// --- Step 4: Collect button click (NEW – works without closing valve first) ---
+collectBtn.addEventListener('click', async () => {
+  // === IMMEDIATELY stop everything related to water flow ===
+  valveOpen = false;                         // mark as closed internally
+  clearInterval(stopwatchInterval);          // stop the timer
+  stopwatchInterval = null;
+  if (collectBtnTimer) {
+    clearTimeout(collectBtnTimer);
+    collectBtnTimer = null;
+  }
+
+  // Visual + audio feedback
+  img4.style.transform = 'rotateZ(0deg)';     // close valve visually
+  img6.classList.remove('active');            // hide fountain
+  fountainSound.pause();
+  fountainSound.currentTime = 0;
+
+  // Hide rising water (smoothly)
+  img7.classList.remove('active');
+  void img7.offsetWidth;
+  img7.classList.add('hide');
+
+  // Hide collect button again
   collectBtn.classList.remove('show');
   collectBtn.classList.add('hidden');
 
-  screen2Header.textContent = otherHeaders[4]; // "Calculate the area..."
+  // Move the little background piece (your existing animation)
+  img8.classList.add('up');
 
-  // Prepare for next cycle
-  currentCycle++;
-  if (currentCycle < 10) {
-    setTimeout(resetForNextCycle, 2000);
-  } else {
-    screen2Header.textContent = "Experiment completed.";
-  }
+  // Hide & reset stopwatch
+  stopwatch.classList.remove('visible');
+  stopwatch.textContent = '00:00';
+
+  // Wait for the "hide" animation of rising water to finish (2–3 seconds)
+  await waitForTransitionEnd(img7, 'height', 3500);
+
+  // Go to next cycle (or finish experiment)
+  finalizeCycle();
 });
 
-// --- Reset for next cycle ---
-function resetForNextCycle() {
+
+
+
+
+
+function finalizeCycle() {
+  // increment cycle count
+  cycleIndex++;
+
+  // If we've hit the max cycles -> finish
+
+  // if (cycleIndex > MAX_CYCLES) {
+  //   screen2Header.textContent = "Experiment completed.";
+  //   // final cleanup
+  //   prepareImg7InitialState();
+  //   img8.classList.remove('up');
+  //   img3.classList.remove('animate');
+  //   img5.classList.remove('upleft');
+  //   return;
+  // }
+
+
+
+if (cycleIndex > MAX_CYCLES) {
+  screen2Header.textContent = "Experiment completed.";
+
+  // Show observation table
+  document.getElementById("observationTable").style.display = "block";
+
+  // final cleanup
+  prepareImg7InitialState();
   img8.classList.remove('up');
   img3.classList.remove('animate');
   img5.classList.remove('upleft');
-  // img7.classList.remove('hide');
-  // img7.style.height = '0%';
-  // img7.style.opacity = '0';
-  img7.classList.remove('hide', 'active'); // Remove both states
-  img7.style.height = '0%';
-  img7.style.opacity = '0';
-
-  // Skip Step 1 for next cycles → start at Step 2 header
-  screen2Header.textContent = `Add ${50 * (currentCycle + 1)}gms weight on the weight pan.`;
-}
+  return;
 }
 
 
 
 
+  // else prepare for next cycle:
+  // remove 'up' so background returns; reset classes
+  img8.classList.remove('up');
+  img3.classList.remove('animate');
+  img5.classList.remove('upleft');
 
+  // Remove both active & hide classes and set initial inline style
+  prepareImg7InitialState();
 
+  // Update header to the new weight for the NEXT cycle
+  screen2Header.textContent = weightHeaderForCurrentCycle();
+  // Now the UI waits for the user (img5 click) to continue (Step 2), skipping Step 1
+}
 
+// --- Defensive: if user navigates or you want to stop mid-cycle, ensure timers cleared ---
+window.addEventListener('beforeunload', () => {
+  clearInterval(stopwatchInterval);
+  if (collectBtnTimer) clearTimeout(collectBtnTimer);
+});
 
 
 

@@ -1,79 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impulse Momentum Principle</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impulse Momentum Principle</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="container">
-        <div id="img2"></div>
-        <div id="img3"></div>
-        <div id="img5"></div>
-        <div id="img6" alt="Click Me"></div>
-        <div id="img7" alt="Click Me"></div>
-        <div id="img4"></div>
-        <div id="img8"></div>
-        <div id="fountain"></div>
-<button id="startFountain">Start</button>
-<audio id="fountainSound" src="water audio.wav" loop></audio>
 
+  <!-- Screen 1 -->
+  <div id="screen1" class="screen active">
+    <div class="header-bar">
+      <h1>Click on the start button to start the experiment.</h1>
+    </div>
+    <button class="start-btn">Start</button>
+  </div>
 
-<h1 id="instructionText" class="instruction">Click on both knurled nuts to release it.</h1>
+  <!-- Screen 2 -->
+  <div id="screen2" class="screen">
+    <div class="header-bar">
+      <h1>Click on the vertical shaft to ensure that it is free to move.</h1>
+    </div>
+    <div class="image-stack">
+      <div class="maintain-proportion">
+        <img id="img8" class="image-layer bg-image" src="bruette.png" />
 
+        <div class="image-layer img2"></div> 
+        <div class="image-layer img3"></div>
+        <div class="image-layer img4"></div>
+        <div class="image-layer img5"></div>
+        <div class="image-layer img6"></div>
+        <div class="image-layer img7"></div>
 
-
-     
- 
+        <button id="collectBtn" class="hidden">Collect</button>
+        <div id="stopwatch">00:00</div>
       </div>
 
-    
+      <audio id="fountainSound" src="water audio.wav" loop></audio>
+    </div>
+  </div>
 
-      <script src="script.js"></script>    
+
+  <img id="observationTable" src="observation.jpg" 
+     style="display:none; 
+            position:absolute; 
+            top:13%; 
+            left:50%; 
+            transform:translateX(-50%); 
+            width:50%; 
+            z-index:20; 
+            border:3px solid white; 
+            border-radius:10px;
+            box-shadow:0 0 20px rgba(0,0,0,0.4);" />
+
+  <script src="script.js"></script>
 </body>
-
 </html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Background Transition</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div id="screen1" class="screen active">
-      <div class="header-bar">
-        <h1>Click on the start button to start the experiment.</h1>
-      </div>
-      <button class="start-btn">Start</button>
-    </div>
-
-    <div id="screen2" class="screen">
-      <div class="header-bar">
-        <h1>Click on the vertical shaft to ensure that it is free to move.</h1>
-      </div>
-      <div class="image-stack">
-        <div class="maintain-proportion">
-
-           <img id="img8" class="image-layer bg-image" src="bruette.png" />
-
-           <div class="image-layer img2"></div> 
-           <div class="image-layer img3"></div>
-           <div class="image-layer img4"></div>
-           <div class="image-layer img5"></div>
-           <div class="image-layer img6"></div>
-           <div class="image-layer img7"></div>
-
-           <button id="collectBtn" class="hidden">Collect</button>
-           <div id="stopwatch">00:00</div>
-        </div>
-        <audio id="fountainSound" src="water audio.wav" loop></audio>
-       
-      </div>
-    </div>
-
-    <script src="script.js"></script>
-   
-  </body>
-</html>
-
