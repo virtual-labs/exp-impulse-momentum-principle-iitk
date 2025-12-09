@@ -77,7 +77,10 @@ body {
 .start-btn {
   background: rgba(255, 255, 255, 0.8);
   margin: auto;
-  margin-bottom: 1vh;
+  /* margin-bottom: 1vh; */
+  position: absolute;
+  top: 47%;
+  right: 75%;
   padding: clamp(0.5rem, 2vw, 0.8rem) clamp(1rem, 4vw, 1.5rem);
   font-size: clamp(1rem, 3vw, 1.5rem);
   border: none;
