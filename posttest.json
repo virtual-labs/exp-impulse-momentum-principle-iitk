@@ -1,0 +1,51 @@
+{
+    "version": 2.0,
+    "questions": [
+      {
+        "question": "1. Change in momentum of an object is equal to the",
+        "answers": {
+          "a": "Impulse",
+          "b": "Energy",
+          "c": "Entropy",
+          "d": "Enthalpy"
+        },
+        
+        "correctAnswer": "a",
+        "difficulty": "beginner"
+      },
+      {
+        "question": "2. The impulse-momentum principle is a direct consequence of: ",
+        "answers": {
+          "a": "Law of conservation of energy",
+          "b": "Newton’s first law",
+          "c": "Newton’s second law",
+          "d": "Newton’s third law"
+        },
+       
+        "correctAnswer": "c",
+        "difficulty": "beginner"
+      },
+      {
+        "question": "3. If a jet of water with velocity 'v' strikes a stationary inclined plate, what is the force exerted by the jet on the plate in the direction of the jet? ",
+        "answers":{
+          "a": "ρAv²",
+          "b": "ρAv²sinθ",
+          "c": "ρAv²cosθ",
+          "d": "2ρAv²"
+        },
+        "correctAnswer": "c",
+        "difficulty":"beginner"
+      },
+      {
+        "question": "4. The impulse-momentum principle is particularly useful in analyzing:",
+        "answers":{
+          "a": "Fluid statics",
+          "b": "Fluid dynamics with negligible viscous effects",
+          "c": "Fluid dynamics with significant viscous effects",
+          "d": "Heat transfer in fluid"
+        },
+        "correctAnswer":"b",
+        "difficulty":"beginner"
+      }
+    ]
+  }
