@@ -41,7 +41,7 @@
         "answers":{
           "a": "N/m",
           "b": "N/s",
-          "c": "m<sub>2</sub>/N",
+          "c": "m<sup>2</sup>/N",
           "d": "m/n"
         },
         "correctAnswer":"b",
@@ -51,8 +51,8 @@
         "question":"5. What is the SI unit of momentum?",
         "answers":{
           "a":"kgm/s",
-          "b":"kgm/s<sub>2</sub>",
-          "c":"kgm.s<sub>2</sub>",
+          "b":"kgm/s<sup>2</sup>",
+          "c":"kgm.s<sup>2</sup>",
           "d":"kg/s"
         },
         "correctAnswer":"a",
