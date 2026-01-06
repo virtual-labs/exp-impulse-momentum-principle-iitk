@@ -1,13 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impulse Momentum Principle</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-		<!-- Your code goes here-->
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+  <!-- Screen 1 -->
+  <div id="screen1" class="screen active">
+    <div class="header-bar">
+      <h1>Click on the start button to start the experiment.</h1>
+    </div>
+    <button class="start-btn">Start</button>
+  </div>
+
+  <!-- Screen 2 -->
+  <div id="screen2" class="screen">
+    <div class="header-bar">
+      <h1>Click on the vertical shaft to ensure that it is free to move.</h1>
+    </div>
+    <div class="image-stack">
+      <div class="maintain-proportion">
+        <img id="img8" class="image-layer bg-image" src="bruette.png" />
+
+        <div class="image-layer img2"></div> 
+        <div class="image-layer img3"></div>
+        <div class="image-layer img4"></div>
+        <div class="image-layer img5"></div>
+        <div class="image-layer img6"></div>
+        <div class="image-layer img7"></div>
+
+        <button id="collectBtn" class="hidden">Collect</button>
+        <div id="stopwatch">00:00</div>
+      </div>
+
+      <audio id="fountainSound" src="water audio.wav" loop></audio>
+    </div>
+  </div>
+
+
+  <img id="observationTable" src="observation.jpg" 
+     style="display:none; 
+            position:absolute; 
+            top:13%; 
+            left:50%; 
+            transform:translateX(-50%); 
+            width:50%; 
+            z-index:20; 
+            border:3px solid white; 
+            border-radius:10px;
+            box-shadow:0 0 20px rgba(0,0,0,0.4);" />
+
+  <script src="script.js"></script>
 </body>
 </html>

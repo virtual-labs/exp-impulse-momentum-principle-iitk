@@ -1,190 +1,63 @@
-## README
+This folder has 
 
-## Quiz
-### 1. Introduction
-This part of the experiment is specifically for assessment purposes. This allows for the creation of a quiz with multiple choice single answer questions.  
-These can be
-* Pretest - Pre requisite quizzes
-* Posttest - Testing the learning
-* Learning Unit Quizzes - Quizzes to test the section's learning.
-The format for the same is discussed below.
+### Aim: 
 
-### 2. Target Audience
-This guide is meant for anyone creating a virtual lab and wanting to have a quiz section.
+To study the effect of force on hemispherical vane.
 
-### 3. Structure of quiz
-The data for the quiz needs to be added to a json file pertaining the following specifications.
-1. The quiz needs to have an array of objects, each object representing a question. As shown below
-```
-"questions" : [
-    {
-        "question" : "What is 1+2 ?",
-        "answers" : 
-        {
-            "a" : 1,
-            "b" : 2,
-            "c" : 3,
-            "d" : 4
-        },
-        "correctAnswer" : c
-    }
-]
-```
-### 4. Quiz V2.0 (Enhancements done)
-The new format of quiz has multiple new additions. The details for which have been described below.  
-The format of json would be as linked [here](./pretest.json)  
-
-First we will look at the additional fields added  
-
-### 4.1 Fields 
-* Mandatory Fields
-    * [version](#42-version) - Without which the enhanced quiz will not be rendered. 
-    * [levels](#44-levels) -  Adds difficulty level to each question (Allows for filtering)
-
-* Optional Fields
-    * [explanations](#43-explanations) - Adds an explanation to each answer. If wrong answer is choosen, only it's explanation pops up.  If correct answer is choosen, all available explanations pop up.  
-
-### 4.2 Version
-The very first field is absolutely necessary. This ensures that the quiz supports the new features.
-```
-"version": 2.0
-```   
-
-### 4.3 Explanations
-Just like we mention answers, we can have a section for explanation so that they show up after an answer is marked. This is optional and can completely be left out. The three ways of defining (Assuming there are 4 answers a, b, c, d):
-
-1. All answers have explanations
-```
-"explanations": {
-    "a" : "Explanation 1,
-    "b" : "Explanation 2"
-    "c" : "Explanation 3"
-    "d" : "Explanation 4"
-},
-```  
-2. Some answers have explanations
-```
-"explanations": {
-    "a" : "Explanation 1,
-    "d" : "Explanation 4"
-},
-```
-
-3. No answers have explanations
-```
-/* Can be excluded from json */
-```  
+### THEORY
 
 
-### 4.4 Levels
-Adds an ability to filter questions based on difficulty levels. This is mandatory and has to be mentioned for each question.  
-The three available difficulty levels are:
-```
-['beginner', 'intermediate', 'advanced']
-```
-Using any other will not work. The format for the same:
-```
-"difficulty" : "beginner"
-```
+When a plate is placed in the path of a jet, the jet exerts a force on the plate. This force can be calculated from the impulse momentum equation. Momentum equation is based on Newton's second law of motion, which states that “The algebraic sum of external forces applied to control volume of fluid in any direction is equal to the rate of change of momentum in that direction." The external forces include the components of the weight of the fluid and of the forces exerted externally upon the boundary surface of the control volume.
 
-### 5. Tips
-1. An extra functionality of explanation is the ability to add an Rich Text (HTML Formatted). It will work just like in html.  
-This could be used for
-    a. Adding hyper links
-    b. Formatting text etc.
-```
-"explanations": {
-    "a" : "Explanation 1  <a href='www.google.com'>here</a>",
-    "b" : "Explanation 2"
-},
-```
-> This can be done in either of explanation, answer and the question.
-An example for the same can be found here: source | website
+If a vertical jet moving with velocity V is made to strike a target, which is free to move in the vertical direction, then a force will be exerted on the jet by the impact of jet. According to momentum equation, this force must be equal to the rate of change of momentum of the jet flow in the same direction.
 
-2. Multi Correct
-To mimic the functionality of multi correct questions, one can add options as part of the question itself, and the actual answer options can be like : 
-```
-    "answers" : 
-    {
-        "a" : "both i and ii",
-        "b" : "All i, ii, iii, iv",
-        "c" : "Only i",
-        "d" : "None of the above"
-    }
-```
-An example for the same can be found here: source | website
+Due to impact of the jet on the flat stationary plate, the entire velocity of the jet is destroyed and due to the rate of change of momentum, force acts on the plate. The jet after striking will move along the plate. But the plate is at right angles to the jet. Hence the components of the velocity of the jet in the direction of the jet after striking it will be zero. The force exerted by the jet on the flat plate in the direction of the jet.
+ 
 
-3. Image Support  
-You can add images to both question and answers, there can be multiple cases of the same. The following examples can be followed.  
-* **Image in question** : Add img tag in question.
-```
-"questions" : [
-    {
-        "question" : "<img src="./images/example.png" alt="question image">",
-        "answers" : 
-        {
-            "a" : 1,
-            "b" : 2,
-            "c" : 3,
-            "d" : 4
-        },
-        "correctAnswer" : c
-    }
-]
-```  
+<img src="images/pic1.png"/>
 
-* **Image and Text in question** : Add br tag and img tag in question after text. 
-```
-"questions" : [
-    {
-        "question" : "This is an example question <br><img src="./images/example.png" alt="question image">",
-        "answers" : 
-        {
-            "a" : 1,
-            "b" : 2,
-            "c" : 3,
-            "d" : 4
-        },
-        "correctAnswer" : c
-    }
-]
-```  
-> The same two cases apply for answers too.
-**Make sure the image aspect ratio remains constant and good to maintain the structure**
+### Actual Discharge (Qa)
 
-### 6. Manual Validation of Quiz Json (wrt version 2.0)
-This is till the automatic validation is set up.
-* The first field has to be version with 2 or 2.0 as value.
-* The questions needs to be an array of objects containing questions.
-* Each question object should hav a question field, answers field, difficulty field and correctAnswer field.
-    * question : Should be a string
-    * answer : Should be an object containing options, and each option should be a string.
-    * difficulty : should be a string and should have values from ["beginner", "intermerdiate", "advanced"]
-    * correctAnswer : Should be a string and it's value should be present in keys of one of the answer.
-* If explanation is present it has to be an object and needs to follow the description of answer object.  
+The water flowing through the section of a pipe or a channel under the steady state conditions is collected in a collecting tank for a known time t. The rise of water level in the collecting tank is noted down. The actual discharge is
 
-### 7. Test Cases
-- [x] Using the mentioned quiz format  
-- [x] Using the old quiz json format
-- [ ] Not including the version in json
-- [ ] Including incorrect version in json 
-- [ ] Including correct version but following old format 
-- [x] Difficulty not mentioned
-- [x] Incorrect difficulty level mentioned
-- [x] explanation not provided for all options
-- [x] explanation empty
-- [x] explanation object not defined
-- [x] HTML in quuestion (tags like hyper links, bold etc)
-- [x] HTML in answer (tags like hyper links, bold etc)
-- [x] HTML in explanation (tags like hyper links, bold etc)
-- [x] On wrong annswer only wrong answer is colored red
-- [x] On correct answer all red color resets
-- [x] Combination of filters working properly
-- [x] If all questions have same difficulty, filter option should be hidden.
-- [x] When questions are answered after filtering, marks should be counted out of filtewred questions, not total.
-- [x] On wrong answer only explanation of wrong answer is shown
-- [x] On correct answer all available explanations are shown
+<img src="images/pic2.png"/>
 
-### 8. TODO
-* Add automatic schema validation
-* Link to source files implementing the above tips.
+
+
+### DESCRIPTION
+
+The setup consists of a sump tank with centrifugal pump to circulate water. A chamber with two side glass is provided for visualization of impact of jet on vanes. Water from sump tank flows through a nozzle and strikes vertically to vane positioned above the nozzle. Two types of vanes are provided that can be fixed one at a time. Arrangement is made for the movement of the plate of the vane under the action of the jet and also because of the weight placed on the loading pan. Measuring tank and stop watch is provided for flow measurement.
+
+
+
+### PROCEDURE
+
+1.	Close all the valves.
+2.	Fill sump tank ¾ with clean water and ensure that no foreign particles are there. 
+3.	Open by-pass valve.
+4.	Ensure that ON/OFF switch given on the panel is at OFF position.
+5.	Switch on the main power supply and then switch ON the pump.
+6.	Open flow control valve and allow water to flow through test section by partially closing valve.
+7.	Open the air release valve provided on the manometer, slowly to release the air from manometer.
+8.	When there is no air in the manometer, close air release valve.
+9.	Set the position of pitot tube at the centre of the test section by adjusting the pointer to zero by knob provided.
+10.	Adjust water flow rate with the help of control valve and by pass valve.
+11.	Record the manometer reading.
+12.	Measure the flow of water, discharged, using stop watch and measuring tank.
+13.	Repeat the experiment for different flow rates of water by operating control valve and by-pass valve.
+14.	Record the manometer reading for different position of pitot tube at particular discharge for determination of velocity profile.
+
+
+### RESULTS
+
+Rate of change of momentum for hemispherical vane = ________N
+
+
+### PRECAUTIONS
+
+1.	Never run the apparatus if power supply is less than 180 volts and above 230 volts.
+2.	Always use clean water.
+3.	To prevent clogging of moving parts, run pump at least once in a fortnight.
+4.	Drain the apparatus completely after experimentation.
+5.	Always keep apparatus free from dust.
+

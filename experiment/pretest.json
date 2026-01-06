@@ -1,39 +1,63 @@
 {
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+    "version": 2.0,
+    "questions": [
+      {
+        "question": "1. The impulse-momentum equation in fluid mechanics states that the impulse applied to a fluid is equal to",
+        "answers": {
+          "a": "Change in kinetic energy",
+          "b": "Change in potential energy",
+          "c": "Change in momentum",
+          "d": "None of above"
+        },
+        
+        "correctAnswer": "c",
+        "difficulty": "beginner"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      {
+        "question": "2. If a jet of water strikes a stationary curved plate at its center, the force exerted by the jet is",
+        "answers": {
+          "a": "In the direction of jet",
+          "b": "Depends on curvature plate",
+          "c": "zero",
+          "d": "at 90 degree "
+        },
+       
+        "correctAnswer": "b",
+        "difficulty": "beginner"
       },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+      {
+        "question":"3. Momentum is a ______ quantity",
+        "answers":{
+          "a": "vector",
+          "b": "scalar",
+          "c": "infinite",
+          "d": "zero"
+        },
+        "correctAnswer":"a",
+        "difficulty":"beginner"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      {
+        "question":"4. What is the SI unit of impulse?",
+        "answers":{
+          "a": "N/m",
+          "b": "N/s",
+          "c": "m<sup>2</sup>/N",
+          "d": "m/n"
+        },
+        "correctAnswer":"b",
+        "difficulty":"beginner"
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+      {
+        "question":"5. What is the SI unit of momentum?",
+        "answers":{
+          "a":"kgm/s",
+          "b":"kgm/s<sup>2</sup>",
+          "c":"kgm.s<sup>2</sup>",
+          "d":"kg/s"
+        },
+        "correctAnswer":"a",
+        "difficulty":"beginner"
+      }
+    
+    ]
+  }
